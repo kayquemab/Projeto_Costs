@@ -1,0 +1,99 @@
+/* =======================
+   Container principal
+======================= */
+.sobre_container {
+  display: flex;             /* cria colunas lado a lado */
+  flex-wrap: wrap;           /* permite empilhar em telas menores */
+  width: 100%;
+  padding: 2em;
+  background-color: #f2f2f2;
+}
+
+/* =======================
+   Texto
+======================= */
+.sobre_texto {
+  width: 50%;                /* metade do container */
+  padding-right: 2em;        /* espaço entre texto e imagem */
+  box-sizing: border-box;
+}
+
+.sobre_container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.sobre_container h1 span {
+  background-color: #222;
+  color: #ffbb33;
+  padding: 0.1em 0.3em;
+  border-radius: 10px;
+}
+
+.sobre_container p {
+  max-width: 700px;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6em;
+}
+
+.sobre_container strong {
+  color: #ffbb33;
+  background-color: #222;
+  padding: 2px 4px;
+  border-radius: 8px;
+}
+
+/* =======================
+   Categorias
+======================= */
+.categorias {
+  margin-top: 2em;
+}
+
+.categorias h2 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: #222;
+}
+
+.categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias li {
+  display: flex;            /* alinha elementos dentro do li */
+  justify-content: flex-start; /* conteúdo à esquerda */
+  gap: 0.5em;               /* espaçamento interno */
+  font-size: 1.1em;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+/* =======================
+   Imagem
+======================= */
+.img {
+  width: 50%;               /* metade do container */
+  max-width: 100%;
+  display: block;
+  margin: 2em auto;
+}
+
+/* =======================
+   Responsivo
+======================= */
+@media (max-width: 768px) {
+  .sobre_container {
+    flex-direction: column; /* empilha texto e imagem */
+    text-align: center;
+  }
+
+  .sobre_texto, 
+  .img {
+    width: 100%;            /* ocupam toda largura */
+    padding-right: 0;
+    margin: 1em 0;
+  }
+}

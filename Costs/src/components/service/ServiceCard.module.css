@@ -1,0 +1,139 @@
+/* --- Layout responsivo do card (lado a lado em telas grandes) --- */
+.project_card {
+  /* torna o card inline e flexível (anda lado a lado e quebra linha) */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* largura fluida por breakpoint */
+  box-sizing: border-box;
+  width: 100%;
+  margin: 8px;
+  vertical-align: top;
+
+  /* visual */
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+/* Centralizar no mobile */
+@media (max-width: 599px) {
+  .project_card {
+    display: block;
+    /* deixa o card em bloco */
+    margin: 8px auto;
+    /* centraliza horizontalmente */
+    max-width: 400px;
+    /* opcional: limite de largura */
+  }
+}
+
+@media (min-width: 600px) {
+  .project_card {
+    width: calc(50% - 16px);
+  }
+
+  /* 2 por linha */
+}
+
+@media (min-width: 900px) {
+  .project_card {
+    width: calc(33.333% - 16px);
+  }
+
+  /* 3 por linha */
+}
+
+@media (min-width: 1200px) {
+  .project_card {
+    width: calc(25% - 16px);
+  }
+
+  /* 4 por linha */
+}
+
+.project_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+  border-color: #cbd5e1;
+}
+
+/* Título em “pílula” preta com texto amarelo */
+.project_card h4 {
+  margin: 0 0 6px 0;
+  padding: 10px 12px;
+  background: #111214;
+  color: #fbbf24;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Texto e rótulos */
+.project_card p {
+  margin: 4px 0;
+  font-size: .95rem;
+  color: #4b5563;
+}
+
+.project_card p span {
+  color: #111827;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+/* Botões */
+.project_card_actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Botões */
+.project_card_actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.project_card_actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 14px;
+  background: #ffffff;
+  /* fundo branco no estado normal */
+  color: #111214;
+  /* texto/ícone preto */
+  border: 1px solid #111214;
+  /* borda preta */
+  border-radius: 8px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .1s ease;
+}
+
+/* Hover = preto e amarelo */
+.project_card_actions button:hover {
+  background: #111214;
+  /* fundo preto */
+  color: #fbbf24;
+  /* texto amarelo */
+  border: 1px solid #111214;
+  /* borda continua preta */
+}
+
+/* Clique = leve compressão */
+.project_card_actions button:active {
+  transform: scale(.96);
+}

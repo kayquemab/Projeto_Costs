@@ -1,0 +1,107 @@
+.project_details {
+    padding: 2em;
+}
+
+.project_details h1,
+.project_details h2,
+.project_details p {
+    margin-bottom: 0.5em;
+}
+
+.project_details h1 {
+    background-color: #222;
+    color: #ffbb33;
+    padding: 0.4em;
+    border-radius: 10px;
+}
+
+.project_details span {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #222;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    max-height: 40px;
+    border: none;
+}
+
+.btn:hover {
+    color: #ffbb33;
+}
+
+.projects_info {
+    width: 100%;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+/* Telas até 768px (tablet e celular) */
+@media (max-width: 768px) {
+    q .details_container {
+        flex-direction: column;
+        /* muda para coluna no mobile */
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%;
+        /* botão ocupa toda a largura */
+        max-height: none;
+        margin-top: 1em;
+    }
+
+    .project_details {
+        padding: 1em;
+        /* menos espaço nas laterais */
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    .project_details h1 {
+        font-size: 1.2rem;
+        padding: 0.3em;
+    }
+
+    .projects_info p {
+        font-size: 0.9rem;
+    }
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    /* espaço entre cards */
+    align-items: stretch;
+}
+
+.details_container {
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.service_form_container {
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}

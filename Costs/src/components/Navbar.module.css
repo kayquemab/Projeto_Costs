@@ -1,0 +1,87 @@
+/* Barra ocupa 100% */
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: #222;
+}
+
+/* Conteúdo interno centralizado e limitado (sem mexer no JSX) */
+.navbar>* {
+  max-width: 1200px;
+  /* limita a largura do conteúdo */
+  height: 100%;
+  /* igual à altura da navbar */
+  margin: 0 auto;
+  /* centraliza horizontalmente */
+  padding: 0 24px;
+  /* espaçamento interno */
+  box-sizing: border-box;
+  /* padding incluído na largura */
+
+  display: flex;
+  /* flex container */
+  align-items: center;
+  /* centraliza verticalmente */
+  justify-content: space-between;
+  /* logo à esquerda / menu à direita */
+}
+
+
+/* Menu */
+.list {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+
+  flex-wrap: nowrap;
+  /* evita quebrar linha */
+  white-space: nowrap;
+  /* impede que o texto dentro dos links quebre */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .list {
+    justify-content: center;
+    /* centraliza os links horizontalmente */
+    gap: 16px;
+    flex-wrap: nowrap;
+    /* mantém todos na mesma linha */
+    width: 100%;
+  }
+
+  .item a {
+    text-align: center;
+    /* garante que o texto do link fique centralizado */
+  }
+}
+
+
+.item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: #ffbb33;
+}
+
+/* Logo padrão (desktop) */
+.navbar a img {
+  width: 70px;
+  /* tamanho padrão em telas grandes */
+  height: auto;
+  /* mantém proporção */
+  display: block;
+  /* garante que seja exibido */
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  .navbar a img {
+    display: none;
+    /* esconde no mobile */
+  }
+}

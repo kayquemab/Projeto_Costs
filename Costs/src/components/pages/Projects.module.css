@@ -1,0 +1,77 @@
+.title_container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  padding: 0.5em 2em 0 2em;
+  height: 20px;
+  margin-bottom: 25px;
+  white-space: nowrap;
+  margin-top: 10px;
+  /* evita quebra de linha no desktop */
+}
+
+/* Mobile: título em cima, botão embaixo centralizado */
+@media (max-width: 768px) {
+  .title_container {
+    grid-template-columns: 1fr;
+    /* uma coluna */
+    grid-template-rows: auto auto;
+    /* título em cima, botão embaixo */
+    gap: 8px;
+    /* espaço entre título e botão */
+    justify-items: center;
+    /* centraliza o botão horizontalmente */
+  }
+}
+
+.project_container {
+  padding: 2em;
+  margin-top: 0;
+  /* padrão para desktop */
+}
+
+/* Para mobile (ex: até 768px de largura) */
+@media (max-width: 768px) {
+  .project_container {
+    margin-top: 70px;
+  }
+}
+
+
+.projects_grid {
+  display: grid;
+  gap: 16px;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@media (min-width: 600px) {
+  .projects_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .projects_grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.project_item {
+  display: flex;
+  min-width: 0;
+}
+
+/* Mensagem "Não há projetos cadastrados" centralizada */
+.project_container p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 2em;
+}

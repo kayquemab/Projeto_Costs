@@ -1,0 +1,33 @@
+.newProject_container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+  .newProject_container h1,
+  .newProject_container p {
+    text-align: center; /* centraliza texto no mobile */
+  }
+
+  .newProject_container {
+    width: 90%; /* ajusta o container para telas pequenas */
+    padding: 2em;
+  }
+}
+
+.newProject_container h1 {
+    margin-bottom: 0.5em;
+}
+
+.newProject_container p {
+    color: #7b7b7b;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;           /* espaço entre cards */
+  align-items: stretch;
+}
