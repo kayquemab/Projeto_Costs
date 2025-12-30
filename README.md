@@ -40,8 +40,8 @@ npm start
 
 📌 Observações
 
-Projeto feito para estudo e prática
-Desenvolvido em React (pode usar API simulada, se configurado)
+* Projeto feito para estudo e prática
+* Desenvolvido em React (pode usar API simulada, se configurado)
 
 ---
 
