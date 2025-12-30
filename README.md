@@ -1,4 +1,4 @@
-📌 Costs — Hora de Codar
+# 📌 Costs — Hora de Codar
 
 Aplicação em React para gerenciar projetos e orçamentos usando JSON Server.
 
