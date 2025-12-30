@@ -1,6 +1,6 @@
-# 📌 Costs - Hora de Codar
+📌 Costs — Hora de Codar
 
-O **Costs** é uma aplicação em **React** para gerenciar projetos e orçamentos usando **JSON-Server**.
+Aplicação em React para gerenciar projetos e orçamentos usando JSON Server.
 
 ---
 
@@ -14,9 +14,9 @@ O **Costs** é uma aplicação em **React** para gerenciar projetos e orçamento
 
 ## ✨ Funcionalidades
 
-* Site informativo do Google Glass
-* Navegação entre seções do site
-* Estruturação de conteúdo
+* Cadastro e gerenciamento de projetos
+* Criação e remoção de serviços/despesas
+* Acompanhamento do total gasto vs. orçamento disponível
 
 ---
 
@@ -24,22 +24,27 @@ O **Costs** é uma aplicação em **React** para gerenciar projetos e orçamento
 
 ```bash
 # Clone o repositório
-git clone https://github.com/kayquemab/Projeto_GoogleGlass
+git clone https://github.com/kayquemab/Costs
 
-# Execute abrindo o arquivo index.html no navegador
+# Entre na pasta do projeto
+cd Costs
 
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm start
 ```
 
 ---
 
-## 📌 Observações
+📌 Observações
 
-* Projeto desenvolvido com HTML, CSS e JavaScript puro
-* Não utiliza frameworks ou bibliotecas externas
+Projeto feito para estudo e prática
+Desenvolvido em React (pode usar API simulada, se configurado)
+
 ---
 
 ## 👤 Autor
 
-Criado por **Gustavo Guanabara** | Desenvolvido por **Kayque Miqueias**
-
-
+Criado por **Matheus Battisti** | Desenvolvido por **Kayque Miqueias**
