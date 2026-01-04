@@ -26,13 +26,16 @@ Aplicação em React para gerenciar projetos e orçamentos usando JSON Server.
 # Clone o repositório
 git clone https://github.com/kayquemab/Costs
 
-# Entre na pasta do projeto
-cd Costs
-
 # Instale as dependências
 npm install
 
-# Rode o projeto
+# No terminal, rode a pasta do projeto
+cd Costs
+
+# Em outro, terminal, rode:
+cd backend
+
+# No primeiro terminal, rode o projeto
 npm start
 ```
 
