@@ -24,7 +24,7 @@ Aplicação em React para gerenciar projetos e orçamentos usando JSON Server.
 
 ```bash
 # Clone o repositório
-git clone https://github.com/kayquemab/Costs
+git clone https://github.com/kayquemab/Projeto_Costs
 
 # Instale as dependências
 npm install
