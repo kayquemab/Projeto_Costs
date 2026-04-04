@@ -18,7 +18,7 @@ Aplicação web em React para gerenciamento de projetos e controle de orçamento
 
 ```bash
 git clone https://github.com/kayquemab/Projeto_Costs
-cd costs
+cd Costs
 
 # Instalar dependências
 npm install
