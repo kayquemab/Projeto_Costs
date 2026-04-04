@@ -1,53 +1,38 @@
-# 📌 Costs — Hora de Codar
+# 📌 Costs
 
-Aplicação em React para gerenciar projetos e orçamentos usando JSON Server.
-
----
+Aplicação web em React para gerenciamento de projetos e controle de orçamento.
 
 ## 🚀 Tecnologias
 
-* React.js
+* React
 * CSS3
 * JavaScript
 
----
-
 ## ✨ Funcionalidades
 
-* Cadastro e gerenciamento de projetos
-* Criação e remoção de serviços/despesas
-* Acompanhamento do total gasto vs. orçamento disponível
-
----
+* Cadastro de projetos
+* Gerenciamento de serviços/despesas
+* Controle de orçamento
 
 ## ⚙️ Como executar
 
 ```bash
-# Clone o repositório
 git clone https://github.com/kayquemab/Projeto_Costs
+cd costs
 
-# Instale as dependências
+# Instalar dependências
 npm install
 
-# No terminal, rode a pasta do projeto
-cd Costs
-
-# Em outro, terminal, rode:
-cd backend
-
-# No primeiro terminal, rode o projeto
+# Executar o projeto
 npm start
 ```
 
----
+## 📌 Observações
 
-📌 Observações
-
-* Projeto feito para estudo e prática
-* Desenvolvido em React (pode usar API simulada, se configurado)
-
----
+* Requer Node.js instalado
+* Pode utilizar JSON Server para simulação de API
 
 ## 👤 Autor
 
-Criado por **Matheus Battisti** | Desenvolvido por **Kayque Miqueias**
+* Criado por **Matheus Battisti**
+* Desenvolvido por **Kayque Miqueias**
